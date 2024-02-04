@@ -7,6 +7,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/*Header*/
 header {
     width: 100%;
     height: 60px;
@@ -15,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-
+    font-family: 'Raleway', sans-serif;
 }
 
 header nav {
@@ -93,18 +94,4 @@ header nav ul li a {
     background-color: #608a87;
     box-shadow: 0 2px 5px rgba(96, 138, 135, 0.5);
     color: #fff;
-}
-
-/* Lista de información */
-.details ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #608a87;
-
-}
-
-.details ul li {
-    padding: 5px 0;
-    margin-left: 20px;
 }
