@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #608a87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    padding: 10px 15px;
+    transition: all 0.1s ease-in-out;
+}
+
+header nav ul li:hover {
+    background-color: #a9c5c2;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 8px solid #38c894;
+    box-sizing: border-box; /* Agregado */
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%; /* Modificado */
+    padding: 5px;
+    border: 3px solid #38c894;
+    border-radius: 5px;
+}
+
+/* Botón */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #38c894;
+    color: #fff;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #608a87;
+}
+
+/* Media Queries para Responsive Design */
+
+@media screen and (max-width: 480px) {
+
+    /* Estilos para pantallas pequeñas (menos de 480px) */
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    /* Estilos para pantallas medianas (entre 481px y 767px) */
+    .container {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Estilos para pantallas grandes (entre 768px y 991px) */
+    .container {
+        padding: 20px;
+    }
+}
