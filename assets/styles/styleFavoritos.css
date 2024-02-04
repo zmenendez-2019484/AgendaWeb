@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #608a87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    padding: 10px 15px;
+    transition: all 0.1s ease-in-out;
+}
+
+header nav ul li:hover {
+    background-color: #a9c5c2;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Contenedor principal */
+.container-contact {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* Tarjeta de contacto */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Botón para agregar contacto */
+.btn-agregar {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-agregar:hover {
+    background-color: #2e2e2e;
+}
+
+/* Detalles del contacto */
+.details {
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(96, 138, 135, 0.5);
+}
+
+/* Resumen del contacto */
+.summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Lista de información */
+.details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details ul li {
+    padding: 5px 0;
+}
