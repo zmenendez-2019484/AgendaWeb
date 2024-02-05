@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styleToDoList.css">
     <title>ToDoList</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="../pages/Contacto.html">Contacto</a></li>
+                <li><a href="../pages/Favoritos.html">Favoritos</a></li>
+                <li><a href="../pages/Perfil.html">Perfil</a></li>
+                <li><a href="../../index.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="todo-form">
+            <form id="todo-form">
+                <label for="todo-input">Agregar Nueva Tarea</label>
+                <input type="text" id="todo-input" placeholder="Escribe tu tarea aquí" required>
+
+                <label for="priority-select">Prioridad:</label>
+                <select id="priority-select">
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <table id="todo-table">
+                <thead>
+                    <tr>
+                        <th>Número de Tarea</th>
+                        <th>Nombre de la Tarea</th>
+                        <th>Prioridad</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="todo-list">
+                    <!-- Aquí se agregarán las filas de la lista de tareas -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
 </body>
+
 </html>
