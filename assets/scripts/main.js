@@ -23,7 +23,6 @@ function validateLogin() {
     const password = document.querySelector(".input-div.pass .input").value;
     const users = [
         { email: 'zmenendez@kinal.com', password: '28102006' },
-        { email: 'braulio@kinal.com', password: '1234567' },
     ];
 
     const matchingUser = users.find((user) => user.email === email && user.password === password);
